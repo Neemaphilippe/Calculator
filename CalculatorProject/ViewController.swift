@@ -16,7 +16,6 @@ class ViewController: UIViewController {
         
         displayLabel.text = displayLabel.text! + String(sender.tag-1)
         
-        
     }
     
 
