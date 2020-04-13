@@ -57,16 +57,16 @@ class ViewController: UIViewController {
                     displayLabel.text = String(previousDisplayNumber + displayNumber)
                 }
                 
+            } else if  sender.tag == 11 {
+                displayLabel.text = nil
+                previousDisplayNumber = 0
+                displayNumber = 0
+                operation = 0
+                
             }
             
             
-            
-            
         }
-        
-        
-        
-        
         
         
     }
