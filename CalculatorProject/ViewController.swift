@@ -22,7 +22,11 @@ class ViewController: UIViewController {
         
     }
     
-
+    
+    @IBAction func nonNumberButtons(_ sender: UIButton) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
