@@ -13,16 +13,21 @@ class ViewController: UIViewController {
     var displayNumber: Double = 0
     var previousDisplayNumber: Double = 0
     var operation = 0
-    var doMath = false 
+    var doMath = false
     
     
     @IBOutlet weak var displayLabel: UILabel!
     
     @IBAction func calculatorNumbers(_ sender: UIButton) {
-        
-        displayLabel.text = displayLabel.text! + String(sender.tag-1)
-        displayNumber = Double(displayLabel.text!)!
-        
+        if doMath == true {
+            displayLabel.text = displayLabel.text! + String(sender.tag - 1)
+            displayNumber = Double(displayLabel.text!)!
+            doMath = false
+            
+        } else {
+            displayLabel.text = displayLabel.text! + String(sender.tag - 1)
+            displayNumber = Double(displayLabel.text!)!
+        }
         
     }
     
