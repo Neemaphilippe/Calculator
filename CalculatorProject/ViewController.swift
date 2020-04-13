@@ -10,11 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var displayNumber: Double = 0;
+    
     @IBOutlet weak var displayLabel: UILabel!
     
     @IBAction func calculatorNumbers(_ sender: UIButton) {
         
         displayLabel.text = displayLabel.text! + String(sender.tag-1)
+        
+        
         
     }
     
