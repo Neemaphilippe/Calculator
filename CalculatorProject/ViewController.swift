@@ -10,8 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var displayNumber: Double = 0;
-    var previousDisplayNumber: Double = 0;
+    var displayNumber: Double = 0
+    var previousDisplayNumber: Double = 0
+    var operation = 0
+    
     
     @IBOutlet weak var displayLabel: UILabel!
     
@@ -28,6 +30,7 @@ class ViewController: UIViewController {
         if displayLabel.text != nil && sender.tag != 11 && sender.tag != 16 {
             
             previousDisplayNumber = Double(displayLabel.text!)!
+            operation = sender.tag
             
             //Operations:
             if sender.tag == 12 {
@@ -41,6 +44,13 @@ class ViewController: UIViewController {
             }
             if sender.tag == 15 {
                 displayLabel.text = "+"
+            }
+            else if sender.tag == 16 {
+              
+                
+                
+                
+                
             }
             
             
