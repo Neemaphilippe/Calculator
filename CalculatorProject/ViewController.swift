@@ -51,7 +51,9 @@ class ViewController: UIViewController {
             if sender.tag == 15 {
                 displayLabel.text = "+"
             }
-            else if sender.tag == 16 {
+           
+        
+        else if sender.tag == 16 {
               
                 if operation == 12 {
                     displayLabel.text = String(previousDisplayNumber / displayNumber)
@@ -62,6 +64,7 @@ class ViewController: UIViewController {
                 } else if operation == 15 {
                     displayLabel.text = String(previousDisplayNumber + displayNumber)
                 }
+                doMath = true 
                 
             } else if  sender.tag == 11 {
                 displayLabel.text = nil
@@ -84,4 +87,5 @@ class ViewController: UIViewController {
 
 
 }
+
 
