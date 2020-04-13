@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     var displayNumber: Double = 0
     var previousDisplayNumber: Double = 0
     var operation = 0
+    var doMath = false 
     
     
     @IBOutlet weak var displayLabel: UILabel!
